@@ -1,0 +1,48 @@
+import java.util.*;
+
+class Main{
+    public static void main(String[] args) {
+        int Maths, Science, Social, English, Telugu, Hindi, Sum=0, Average;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the marks of Maths: ");
+        Maths=scanner.nextInt();
+        System.out.print("Enter the marks of Science: ");
+        Science=scanner.nextInt();
+        System.out.print("Enter the marks of Social: ");
+        Social=scanner.nextInt();
+        System.out.print("Enter the marks of English: ");
+        English=scanner.nextInt();
+        System.out.print("Enter the marks of Telugu: ");
+        Telugu=scanner.nextInt();
+        System.out.print("Enter the marks of Hindi: ");
+        Hindi=scanner.nextInt();
+        Sum=Maths+Science+Social+English+Telugu+Hindi;
+        Average=Sum/6;
+        System.out.println("The Total Marks are: "+Sum);
+        System.out.println("The Average percentage is: "+Average);
+        if (Average>40) {
+            if (Average>90){
+                System.out.println("The Grade obtained is 'A+'.");// The Grade A+ is th range of 91 to 100 percentage
+            }
+            else if (Average>80){
+                System.out.println("The Grade obtained is 'A'.");// The Grade A is th range of 81 to 900 percentage
+            }
+            else if (Average>70){
+                System.out.println("The Grade obtained is 'B+'.");// The Grade B+ is th range of 71 to 80 percentage
+            }
+            else if (Average>60){
+                System.out.println("The Grade obtained is 'B'.");// The Grade B is th range of 61 to 70 percentage
+            }
+            else if (Average>50){
+                System.out.println("The Grade obtained is 'C'.");// The Grade A+ is th range of 51 to 60 percentage
+            }
+            else if (Average>40){
+                System.out.println("The Grade obtained is 'D'.");// The Grade A+ is th range of 41 to 50 percentage
+            }
+        }
+        else {
+            System.out.println("The Grade obtained is F.");
+        }
+        scanner.close();
+    }
+}
